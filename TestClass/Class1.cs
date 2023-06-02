@@ -130,5 +130,45 @@ namespace TestClass
 
             Assert.AreEqual(expected, actual);
         }
+
+        // Zero Sides Triangle Testings
+        [Test]
+        public void ZeroSidesTriangleTest_Input5and4and0_OutputInvalid()
+        {
+            int firstSide = 5;
+            int secondSide = 4;
+            int thirdSide = 0;
+
+            string expected = "Invalid Triangle - at least one side is zero";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ZeroSidesTriangleTest_Input5and0and0_OutputInvalid()
+        {
+            int firstSide = 5;
+            int secondSide = 0;
+            int thirdSide = 0;
+
+            string expected = "Invalid Triangle - at least one side is zero";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ZeroSidesTriangleTest_Input0and0and0_OutputInvalid()
+        {
+            int firstSide = 0;
+            int secondSide = 0;
+            int thirdSide = 0;
+
+            string expected = "Invalid Triangle - at least one side is zero";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
