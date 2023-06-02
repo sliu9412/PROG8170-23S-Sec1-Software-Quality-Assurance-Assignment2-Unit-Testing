@@ -170,5 +170,45 @@ namespace TestClass
 
             Assert.AreEqual(expected, actual);
         }
+
+        // Invaild Sides Triangle Testings
+        [Test]
+        public void InvalidSidesTriangleTest_Input6and3and3_OutputInvalid()
+        {
+            int firstSide = 6;
+            int secondSide = 3;
+            int thirdSide = 3;
+
+            string expected = "INVALID Triangle detected!!";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void InvalidSidesTriangleTest_Input8and4and3_OutputInvalid()
+        {
+            int firstSide = 8;
+            int secondSide = 4;
+            int thirdSide = 3;
+
+            string expected = "INVALID Triangle detected!!";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void InvalidSidesTriangleTest_Input5and5and10_OutputInvalid()
+        {
+            int firstSide = 5;
+            int secondSide = 5;
+            int thirdSide = 10;
+
+            string expected = "INVALID Triangle detected!!";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
