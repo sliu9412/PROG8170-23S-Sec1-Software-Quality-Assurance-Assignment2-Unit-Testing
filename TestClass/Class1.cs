@@ -64,5 +64,71 @@ namespace TestClass
 
             Assert.AreEqual(expected, actual);
         }
+
+        // Scalene Triangle Testings
+        [Test]
+        public void ScaleneTriangleTest_Input5and4and3_OutputScalene()
+        {
+            int firstSide = 5;
+            int secondSide = 4;
+            int thirdSide = 3;
+
+            string expected = "A SCALENE triangle is formed";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ScaleneTriangleTest_Input6and4and3_OutputScalene()
+        {
+            int firstSide = 6;
+            int secondSide = 4;
+            int thirdSide = 3;
+
+            string expected = "A SCALENE triangle is formed";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ScaleneTriangleTest_Input6and5and3_OutputScalene()
+        {
+            int firstSide = 6;
+            int secondSide = 5;
+            int thirdSide = 3;
+
+            string expected = "A SCALENE triangle is formed";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ScaleneTriangleTest_Input6and5and4_OutputScalene()
+        {
+            int firstSide = 6;
+            int secondSide = 5;
+            int thirdSide = 4;
+
+            string expected = "A SCALENE triangle is formed";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ScaleneTriangleTest_Input7and5and4_OutputScalene()
+        {
+            int firstSide = 7;
+            int secondSide = 5;
+            int thirdSide = 4;
+
+            string expected = "A SCALENE triangle is formed";
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
